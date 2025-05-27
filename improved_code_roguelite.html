@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Roguelite</title>
+    <link rel="stylesheet" href="improved_styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CODE ROGUELITE</h1>
+            <p>Build programs to reach your goals and ascend the towers of code</p>
+        </div>
+
+        <div class="game-stats">
+            <div class="stat-card">
+                <div class="stat-value" id="goal-value">10</div>
+                <div class="stat-label">GOAL</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="current-value">0</div>
+                <div class="stat-label">CURRENT</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">F<span id="floor-number">1</span> R<span id="round-number">1</span></div>
+                <div class="stat-label">FLOOR / ROUND</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="score-value">0</div>
+                <div class="stat-label">SCORE</div>
+            </div>
+            <div class="stat-card">
+                <div class="lives-container" id="lives-container"></div>
+                <div class="stat-label">LIVES</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="section">
+                <h3>📦 Available Blocks</h3>
+                <div class="blocks-container" id="available-blocks"></div>
+                <p style="color: #888; font-size: 0.8rem;">Click blocks to add them to your program</p>
+            </div>
+
+            <div class="section">
+                <h3>⚙️ Your Program</h3>
+                <div class="blocks-container" id="program-blocks"></div>
+                <div class="controls">
+                    <button class="btn" id="run-program">▶️ RUN</button>
+                    <button class="btn btn-secondary" id="reset-program">🗑️ CLEAR</button>
+                </div>
+            </div>
+
+            <div class="section log-section">
+                <h3>📋 Execution Log</h3>
+                <div class="log-content" id="log-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="reward-modal">
+        <div class="modal-content">
+            <h2>🎁 Choose Your Reward</h2>
+            <div class="reward-choices" id="reward-choices"></div>
+        </div>
+    </div>
+
+    <script src="improved_game.js"></script>
+</body>
+</html>

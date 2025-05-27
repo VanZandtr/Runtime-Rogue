@@ -1,0 +1,44 @@
+# Code Roguelite Development Context
+
+## Current Session - 2024-05-22
+
+### Project Overview
+- Web-based roguelike coding game inspired by Balatro
+- Players combine random number generation and logic blocks to reach increasing goals
+- Machine code-like execution but accessible to all audiences
+
+### Key Issues Identified in Original Code
+1. Execution Logic Problems
+   - GOTO implementation doesn't handle bounds properly
+   - IF statements skip incorrectly
+   - LOOP logic is overly complex and buggy
+   - Execution pointer manipulation is inconsistent
+
+2. Game Balance Issues
+   - Goals increase too slowlypredictably
+   - Reward system lacks variety and excitement
+   - Class differences are minimal
+   - No compelling progression hooks
+
+3. Missing Balatro-like Elements
+   - Need more interesting block combinationssynergies
+   - Lack of build-around strategies
+   - Missing aha! moments when combinations work
+   - No escalating complexitystakes
+
+### Design Goals
+- Make execution feel like machine code but understandable
+- Create compelling block synergies like Balatro card combinations
+- Increase difficulty curve and meaningful choices
+- Fix all execution bugs for consistent gameplay
+
+### Next Steps
+1. Fix core execution engine
+2. Improve block variety and synergies
+3. Enhance progression system
+4. Add more engaging reward mechanics
+
+### Implementation Notes
+- Using HTMLCSSJS with no external dependencies beyond CDN libraries
+- State management through global gameState object
+- UI updates through direct DOM manipulation

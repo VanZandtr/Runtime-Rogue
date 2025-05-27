@@ -1,0 +1,56 @@
+# Code Roguelite Development Context
+
+## Current Session - 2024-05-23
+
+### Project Overview
+- Web-based roguelike coding game inspired by Balatro
+- Players combine code blocks to reach or exceed goal values
+- Features multiple character classes with unique abilities
+- Roguelite progression with increasing difficulty
+
+### Key Features Implemented
+1. Block System
+   - Various block types (arithmetic, control flow, random, advanced)
+   - Block rarity system (common, uncommon, rare, legendary)
+   - Class-specific blocks with unique abilities
+   - One-time use blocks that burn after execution
+
+2. Character Classes
+   - Hacker: Control flow specialist with faster execution
+   - Mathematician: Arithmetic expert with higher scoring potential
+   - Gambler: Chance-based blocks with extra life
+   - Architect: Structure specialist with unique recursion block
+
+3. Execution Engine
+   - Step-by-step execution with visual feedback
+   - Control flow handling (GOTO, IF conditions, LOOP)
+   - Register system for storing and loading values
+   - Safety features to prevent infinite loops
+
+4. Progression System
+   - Round-based gameplay with increasing goals
+   - Floor progression after completing multiple rounds
+   - Reward system with new blocks and bonuses
+   - Score calculation based on efficiency and floor level
+
+### Recent Improvements
+1. Added IF/THEN conditional blocks with different benefits
+2. Implemented one-time use blocks (RECUR)
+3. Fixed execution flow issues with loops
+4. Added class-specific rewards
+5. Improved UI feedback during execution
+6. Balanced goal progression between rounds and floors
+
+### Next Steps
+1. Add more unique block types
+2. Implement special floor events
+3. Add persistent unlocks between runs
+4. Create tutorial system
+5. Add sound effects and visual polish
+6. Implement high score system
+
+### Technical Notes
+- Using vanilla HTML/CSS/JS without external dependencies
+- State management through gameState object
+- Block execution through function delegation
+- UI updates through direct DOM manipulation

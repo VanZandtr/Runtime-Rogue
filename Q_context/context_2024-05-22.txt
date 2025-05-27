@@ -1,0 +1,49 @@
+CONTEXT SUMMARY - Code Roguelite Game Development - 2024-05-22
+
+PROJECT OVERVIEW:
+- Web-based roguelite coding game using HTML, CSS, and JavaScript
+- Players use code blocks to reach target values
+- Features class system, life mechanics, and floor progression
+
+GAME MECHANICS:
+1. Core Gameplay:
+   - Build programs using code blocks (GOTO, ADD, DICE, etc.)
+   - Execute programs to reach a target value
+   - Limited to one instance of each block type
+
+2. Class System:
+   - Hacker: Program flow control (GOTO, IF, LOOP), faster execution
+   - Mathematician: Numerical operations (ADD, MULTIPLY, DIVIDE), higher starting goal
+   - Gambler: Chance-based blocks (DICE, FLIP, RANDOM), extra starting life
+
+3. Roguelite Elements:
+   - Life system (lose lives when failing to reach goals)
+   - Floor progression (complete multiple rounds to advance)
+   - Permanent death when out of lives
+   - Score tracking across runs
+
+4. Reward System:
+   - New code blocks
+   - Extra blocks
+   - Health restoration
+   - Max health increases
+
+FILE STRUCTURE:
+- index.html: Main game interface
+- styles.css: Visual styling
+- game.js: Game logic and mechanics
+
+IMPLEMENTATION DETAILS:
+- ADD block adds two values together
+- Each code block limited to one instance per program
+- Class selection at game start
+- Lives displayed as hearts
+- Floor progress shown with progress bar
+- Game over screen with final score and restart option
+
+FUTURE ENHANCEMENT IDEAS:
+- More block types
+- Special events between floors
+- Boss battles requiring specific code solutions
+- Persistent upgrades between runs
+- Achievement system
