@@ -35,9 +35,6 @@ https://rawcdn.githack.com/VanZandtr/Runtime-Rogue/8c7a90678c054a772cebb40acfd0a
 
 #### Control Flow Blocks
 - **GOTO**: Jump to a specific line in your program
-- **IF>**: Execute next line only if current > threshold
-- **IF=**: Execute next line only if current equals target
-- **IF<**: Execute next line only if current < threshold
 - **LOOP**: Repeat next line multiple times
 - **RECUR**: Jump back to start and burn after one use (Architect only)
 
