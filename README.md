@@ -83,3 +83,6 @@ https://rawcdn.githack.com/VanZandtr/Runtime-Rogue/8c7a90678c054a772cebb40acfd0a
 - Block rarity indicated by border colors
 - Animated execution highlighting
 - Clean, modern UI with gradients and animations
+
+## Known Issues and Bugs
+- "Loop" Block doesn't loop next line correctly
